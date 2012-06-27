@@ -1,5 +1,5 @@
 markdown: rdiscount 
-permalink: /:year/:month/:day/:title 
+permalink: /:year/:month/:title 
 title: Jiye的网志
 url: http://jiyeqian.github.com
 subscribe: 
@@ -10,4 +10,4 @@ email: jyq080601@gmail.com
 auto: true
 twitterID: jiyeqian
 googleAnalyticsID: 
-disqusShortname: 
+disqusShortname: jiyeqian
