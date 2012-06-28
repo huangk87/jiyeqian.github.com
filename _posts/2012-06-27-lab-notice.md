@@ -2,8 +2,8 @@
 layout: post
 title: 李纯明博士报告安排
 description: ""
-category: 实验室
-tags: [实验室, 通告]
+category: 杂项
+tags: [实验室]
 ---
 
 ## 报告1：图像处理中的数学方法
