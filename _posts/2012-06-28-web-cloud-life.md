@@ -2,7 +2,7 @@
 layout: post
 title: "云上的日子"
 description: ""
-category: 杂项
+category: 振导社会
 date: 2011-09-29 09:32:00
 tags: [云计算, 网络, 资源]
 ---

@@ -2,9 +2,9 @@
 layout: post
 title: "Git 速查手册"
 description: ""
-category: 程序设计
+category: 振导社会
 date: 2011-09-27 13:37:00
-tags: [Git, 速查, 简介]
+tags: [程序, Git, 速查, 简介]
 ---
 
 ##git 代码库的结构

@@ -2,7 +2,7 @@
 layout: post
 title: "我想写小说"
 description: ""
-category: 文学艺术
+category: 佑启乡邦
 date: 2009-07-04 21:19:00
 tags: [随笔]
 ---

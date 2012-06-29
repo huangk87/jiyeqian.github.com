@@ -2,9 +2,9 @@
 layout: post
 title: "骑行日志"
 description: ""
-category: 杂项
+category: 造就人才
 date: 2012-06-24 23:45:00
-tags: [自行车, 骑行, 健身, 纪录, 游记]
+tags: [骑行, 健身, 纪录, 游记]
 ---
 
 ##骑行白市驿

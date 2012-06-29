@@ -2,7 +2,7 @@
 layout: post
 title: "外国诗歌赏析"
 description: ""
-category: 文学艺术
+category: 佑启乡邦
 date: 2011-10-08 15:09:00
 tags: [外国, 诗歌]
 ---

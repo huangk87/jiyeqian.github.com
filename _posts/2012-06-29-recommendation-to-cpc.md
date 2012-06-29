@@ -2,7 +2,7 @@
 layout: post
 title: "南海的入党推荐词"
 description: ""
-category: 文学艺术
+category: 佑启乡邦
 date: 2009-12-08 20:53:00
 tags: [入党, 推荐]
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: "房老师给大家的新年祝词"
 description: ""
-category: 文学艺术
+category: 佑启乡邦
 date: 2010-01-01 11:25:00
 tags: [实验室, 祝词]
 ---
