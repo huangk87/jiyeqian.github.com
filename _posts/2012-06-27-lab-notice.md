@@ -5,10 +5,13 @@ description: ""
 category: 造就人才
 tags: [实验室, 通知]
 ---
-```
-注意： 1.具体地点在虎溪新校区数学与统计学院510；2.意见和报告心得可在本通知后留言。
-```
-___
+
+      注意：  
+    
+      1. 具体地点在虎溪新校区数学与统计学院510；   
+      2. 意见和报告相关的交流可在直接在本文后留言。
+
+[我要留言⋯⋯](#leave_a_note)
 
 ## 报告1：图像处理中的数学方法
 - 时间：7月2日，星期一 上午10:00  
@@ -46,5 +49,7 @@ ___
 李博士担任二十余家国际权威专业期刊和顶级国际会议的审稿人及程序委员会委员，包括IEEE Trans. on Image Processing， IEEE Trans. on Medical Imaging， IEEE Trans. on Pattern Analysis and Machine Intelligence， Medical Image Analysis， Medical Physics， Magnetic Resonance Imaging  （MRI）等几乎所有图像处理，计算机视觉和医学影像领域的主流期刊，以及 IEEE International Conference on Computer Vision and Pattern Recognition （CVPR）, International Conference on Computer Vision （ICCV）， Medical Image Computing and Computer Assisted Intervention （MICCAI） 等顶级国际会议。李博士曾应邀到卡内基梅隆大学，俄亥俄州立大学，康涅狄格大学，佛罗里达州立大学，清华大学，复旦大学，重庆大学，南京理工大学，华东师范大学，北京师范大学，电子科技大学，厦门大学，南京军区总医院，江苏省人民医院等国内外大学和医院讲学。
 李博士在图像处理领域的一系列研究成果已被世界各国的诸多科研和工程人员广泛应用于工程（包括计算机视觉与图像处理）、生物、医学等领域的科研和技术开发。李博士所建立的模型在图像处理、医学影像和计算机视觉领域中被广泛采用和深入研究。他的一系列基于水平集的图像分割的模型不仅被大量期刊和会议文章所引用，还被一些研究生教材收录，包括国内的科学出版社出版的《图像处理的偏微分方程方法》，或者被国内外一些大学的研究生课程列为重要参考文献 。李博士在磁共振成像的偏移场校正（MRI bias correction） 等医学成像领域的若干重要课题中也取得了世界领先的研究成果，成功地解决了超高场强的磁共振成像中的偏移场校正的难题。李博士目前的主要从事医学影像分析的技术开发及其临床应用，包括多发性硬化症，各种中枢神经系统疾病的计算机辅助诊断的研究，肿瘤精确定位与测量，手术计划与临床随访等等。```李博士开发的基于超声波图像分割的颈动脉内-中膜厚度的测量技术已经被辉瑞（世界最大的制药公司）的全球研发总部采用，并成功地用于治疗动脉硬化的药物开发的临床试验。```
 
+
+<span id="leave_a_note"></span>
 
 
