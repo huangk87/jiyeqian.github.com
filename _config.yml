@@ -4,7 +4,7 @@ title: Jiye的网志
 url:
 subscribe: 
 exclude: [ README.md, newpost.rb ]
-domain: jiyeqian.tk
+domain: 
 author: Jiye Qian
 email: jyq080601@gmail.com
 auto: true
