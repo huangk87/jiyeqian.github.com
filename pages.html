@@ -1,14 +1,13 @@
 ---
-layout: default
-title: 链接 
+layout: page
+title: 链接
 header: Pages
 group: navigation
 ---
 {% include JB/setup %}
 
-<div class="wrapper">
 <ul class="postsList">
-{% assign pages_list = site.pages %}
-{% include JB/pages_list %}
+	{% assign pages_list = site.pages %}
+	{% include JB/pages_list %}
 </ul>
-</div>
+
