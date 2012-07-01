@@ -6,6 +6,8 @@ category: 振导社会
 date: 2011-09-27 13:37:00
 tags: [程序, Git, 速查, 简介]
 ---
+{% include JB/setup %}
+
 
 ##git 代码库的结构
 git 维护的代码分成三部分：current working directory（当前工作目录）、index file、git repository（git仓库）。

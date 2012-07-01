@@ -7,24 +7,18 @@ permalink: /
 {% for post in paginator.posts %}
 <div class="wrapper">
 	<article>
-	<h1><a href="{{ post.url }}">{{ post.title }}</a><small class="pull-right">{{ post.date | date:"%b %e, %Y" }}</small></h1>
-	{% if post.excerpt %}
-	{{ post.excerpt }}
+		<h1><a href="{{ post.url }}">{{ post.title }}</a><small class="pull-right">{{ post.date | date:"%b %e, %Y" }}</small></h1>
+		{% if post.excerpt %}
+		{{ post.excerpt }}
+		{% else %}
+		<div class="fixed-wrapper">
+			{{ post.content }}
+		</div>
+		{% endif %}
+	</article>
 	<p>
 		<a href="{{ post.url }}">阅读全文 →</a>
 	</p>
-	{% else %}
-	{{ post.content }}
-	</article>
-	
-	{% unless post.tags == empty %}
-	<ul class="tag_box inline">
-		{% assign tags_list = post.tags %}
-		{% include JB/tags_list %}
-	</ul>
-	{% endunless %}
-
-	{% endif %}
 </div>
 {% endfor %}
 

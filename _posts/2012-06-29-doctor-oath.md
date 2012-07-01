@@ -6,6 +6,8 @@ category: 研究学术
 date: 2010-12-27 16:39:00
 tags: [摘记, 誓词]
 ---
+{% include JB/setup %}
+
 ##英文
 I ask you solemnly whether by the given oath you undertake to promise and conform most conscientiously that you will defend in a manly way true science, extend and embellish it, not for gain’s sake or for attaining a vain shine of glory, but in order that the light of God’s truth shine bright and expand.   
 ——I keep this oath

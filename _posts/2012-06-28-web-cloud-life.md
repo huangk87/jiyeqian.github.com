@@ -6,6 +6,8 @@ category: 振导社会
 date: 2011-09-29 09:32:00
 tags: [云计算, 网络, 资源]
 ---
+{% include JB/setup %}
+
 ##网盘
 Dropbox [https://dropbox.com/](http://db.tt/rDUmp4yj)：爬上墙头等红杏  
 坚果铺子 [https://jianguopuzi.com/](https://jianguopuzi.com)：Linux、Mac、Windows、Android、iOS客户端   
