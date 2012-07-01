@@ -39,7 +39,7 @@ body {
 
 .fixed-wrapper {
 	height: 400px;
-	overflow: scroll;
+	overflow: hidden;
 }
 
 /* 覆盖bootstrap，设置字号，更适合中文 */
