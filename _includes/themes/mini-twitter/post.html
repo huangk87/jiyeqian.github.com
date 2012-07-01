@@ -1,7 +1,8 @@
 <div class="wrapper">
 
 	<article>
-		<h1><a href="{{ site.url }}{{ page.url }}">{{ page.title }}</a><small class="pull-right">{{ page.date | date:"%b %d, %Y" }}</small></h1>
+		<h1>{{ page.title }}<small class="pull-right">{{ page.date | date:"%b %d, %Y" }}</small></h1>
+		<hr>
 		{{ content }}
 	</article>
 
@@ -13,6 +14,7 @@
 		</ul>
 		{% endunless %}
 	</div>
+	
 	<hr>
 	
 	<ul class="pager">

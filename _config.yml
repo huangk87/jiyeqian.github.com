@@ -1,7 +1,7 @@
 # This is the default format. 
 # For more see: https://github.com/mojombo/jekyll/wiki/Permalinks
 markdown: rdiscount 
-safe: false
+paginate: 4
 
 permalink: /:year/:month/:title 
 
@@ -35,6 +35,12 @@ production_url : http://jiyeqian.github.com
 #
 JB :
   version : 0.2.13
+  
+  tags_list:
+      provider: 
+  
+  pages_list:
+      provider: custom
 
   # All links will be namespaced by BASE_PATH if defined.
   # Links in your website should always be prefixed with {{BASE_PATH}}
@@ -76,6 +82,9 @@ JB :
   archive_path: /archive.html
   categories_path : /categories.html
   tags_path : /tags.html
+  
+  sitemap_path: /sitemap.txt
+  RSS_path: /atom.xml
 
   # Settings for comments helper
   # Set 'provider' to the comment provider you want to use.
