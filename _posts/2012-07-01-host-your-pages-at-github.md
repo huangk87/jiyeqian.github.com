@@ -65,7 +65,12 @@ $ pygmentize -S default -f html | sed 's/^/.highlight code /g' > default.css
 {% endhighlight %}   
 在pygments的CSS选择器前都加上`.highlight code`，防止pygments的CSS影响[mathjax](#mathjax)公式的CSS。[pygments也可能会和bootstrap.min.css冲突](http://www.stehem.net/2012/02/14/how-to-get-pygments-to-work-with-jekyll.html)，需要修改css。上面的`pygmentize`命令就是pygments代码高亮的效果。
 
-另一个比较特殊的代码高亮插件是[include-code](http://octopress.org/docs/plugins/include-code/)，可以直接显示目录中的代码文件，在\_config.yml中设置好`code_dir`参数后，直接用<code>&#123;% include_code excerpt.rb %&#125;</code>，即可显示高亮代码（布局是自己定义的，代码高亮的CSS和pygments一样）如下：  
-{% include_code excerpt.rb %}
+###其它
+显示相关文件的插件用[related_posts-jekyll_plugin](https://github.com/LawrenceWoodman/related_posts-jekyll_plugin)、[只显示第一段](https://github.com/sebcioz/jekyll-only_first_p)的插件，可解析类似wordpress的`<!--more-->`标记的[excerpt插件](https://gist.github.com/986665)，美化引用格式的[blockquote插件](http://octopress.org/docs/plugins/blockquote/)。[octopress的插件](http://octopress.org/docs/plugins/)可以直接用于jekyll中。
+
+一个显示引用的示例：   
+{% blockquote Bobby Willis http://google.com/search?q=pants the search for bobby's pants %}
+  Wheeee!
+{% endblockquote %}
 
 
