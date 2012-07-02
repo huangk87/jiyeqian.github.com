@@ -49,16 +49,3 @@ jekyll-bootstrap的\_includes/JB中有一些常用的工具，用于列表显示
 
 ### 小结
 [jekyll生成静态页面的过程](http://jekyllbootstrap.com/lessons/jekyll-introduction.html#how_jekyll_generates_the_final_static_files)就是先搜集站点的原始数据，通过计算，生成用于页面显示的结构化数据（最终的html静态页面）。结构化数据来源有两方面：一方面是文件中的配置文件，如\_config.yml和markdown的[YAML Front Matter][YFM]；另一方面通过目录结构和jekyll定义的解析法则，产生数据。站点的全局数据用`site.`访问，页面数据用`page.`访问。有了这些结构化的数据后，jekyll再按照用户定义的模板，用相应的结构化数据替换模板中的变量。用户编写的插件是为了计算出满足用户特定需求的数据。
-
-##装饰部件
-
-###图片与文件
-
-
-###其它
-显示相关文件的插件用[related_posts-jekyll_plugin](https://github.com/LawrenceWoodman/related_posts-jekyll_plugin)、[只显示第一段](https://github.com/sebcioz/jekyll-only_first_p)的插件，可解析类似wordpress的`<!--more-->`标记的[excerpt插件](https://gist.github.com/986665)，美化引用格式的[blockquote插件](http://octopress.org/docs/plugins/blockquote/)。[octopress的插件](http://octopress.org/docs/plugins/)可以直接用于jekyll中。
-
-一个显示引用的示例：   
-{% blockquote Bobby Willis http://google.com/search?q=pants the search for bobby's pants %}
-  Wheeee!
-{% endblockquote %}
