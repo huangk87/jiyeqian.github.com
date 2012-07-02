@@ -65,5 +65,7 @@ $ pygmentize -S default -f html | sed 's/^/.highlight code /g' > default.css
 {% endhighlight %}   
 在pygments的CSS选择器前都加上`.highlight code`，防止pygments的CSS影响[mathjax](#mathjax)公式的CSS。[pygments也可能会和bootstrap.min.css冲突](http://www.stehem.net/2012/02/14/how-to-get-pygments-to-work-with-jekyll.html)，需要修改css。上面的`pygmentize`命令就是pygments代码高亮的效果。
 
+转帖gist代码的效果是这样的：
+{% gist 834610 %}
 
 
