@@ -26,7 +26,7 @@ jekyll模板就是带有变量的html格式文件。jekyll的模板用[Liquid](h
 [YFM]: https://github.com/mojombo/jekyll/wiki/YAML-Front-Matter
 
 ###jekyll的数据
-jekyll的数据是用[markdown](http://daringfireball.net/projects/markdown/)、[textile](http://textile.sitemonks.com/)等标记语言写的文档。这些格式的文档解析为html格式后，注入jekyll模板的<code>&#123;&#123; content &#125;&#125;</code>，就有了网站的页面。jekyll支持的markdown解析器（将markdown转换为html）有：<span id="markdown"></span>[rdiscount](https://github.com/rtomayko/rdiscount/)、[kramdown](http://kramdown.rubyforge.org/)、[redcarpet](https://github.com/tanoku/redcarpet/)、[maruku](http://maruku.rubyforge.org/)（jekyll默认）、[bluecloth](http://deveiate.org/projects/BlueCloth/)。为了方便处理公式，也有人hack了jekyll，[将pandoc作为markdown的解析器](http://yangzetian.github.com/2012/04/15/jekyll-pandoc/)。一个更方便的方法是通过[jekyll-pandoc-plugin](https://github.com/dsanson/jekyll-pandoc-plugin)插件，启用pandoc解析器。但是，这些hack后的jekyll启用pandoc不会在github上生效，只能用于本机。
+jekyll的数据是用[markdown](http://daringfireball.net/projects/markdown/)、[textile](http://textile.sitemonks.com/)等标记语言写的文档。这些格式的文档解析为html格式后，注入jekyll模板的<code>&#123;&#123; content &#125;&#125;</code>，就有了网站的页面。jekyll支持的markdown解析器（将markdown转换为html）有：<span id="markdown"></span>[rdiscount](https://github.com/rtomayko/rdiscount/)、[kramdown](http://kramdown.rubyforge.org/)、[redcarpet](https://github.com/tanoku/redcarpet/)、[maruku](http://maruku.rubyforge.org/)（jekyll默认）、[bluecloth](http://deveiate.org/projects/BlueCloth/)。为了方便处理LaTeX公式，也有人hack了jekyll，[将pandoc作为markdown的解析器](http://yangzetian.github.com/2012/04/15/jekyll-pandoc/)。一个更方便的方法是通过[jekyll-pandoc-plugin](https://github.com/dsanson/jekyll-pandoc-plugin)插件，启用pandoc解析器。但是，这些hack后的jekyll启用pandoc不会在github上生效，只能用于本机。
 
 ###jekyll的美化
 美化就是用CSS和javascript对html描述的页面进行渲染，美化网页。[twitter bootstrap](http://twitter.github.com/bootstrap/)是一套极易上手的页面美化工具。twitter bootstrap还提供了[960网格布局](http://960.gs/)，只要按照它约定的方式对页面结构定义、对html标签的`class`命名，网页的布局美化可谓快又好。
@@ -54,6 +54,7 @@ jekyll-bootstrap的\_includes/JB中有一些常用的工具，用于列表显示
 
 ###图片与文件
 
+
 ###代码高亮
 网页代码高亮的一般原理是先用JS对代码的进行解析，并提根据不同程的序语言提取关键字、变量、常量、注释，然后将代码层次结构用html标签描述，最后用CSS着色。
 
@@ -65,5 +66,5 @@ $ pygmentize -S default -f html | sed 's/^/.highlight code /g' > default.css
 {% endhighlight %}   
 在pygments的CSS选择器前都加上`.highlight code`，防止pygments的CSS影响[mathjax](#mathjax)公式的CSS。[pygments也可能会和bootstrap.min.css冲突](http://www.stehem.net/2012/02/14/how-to-get-pygments-to-work-with-jekyll.html)，需要修改css。上面的`pygmentize`命令就是pygments代码高亮的效果。
 
-###{% m %}\LaTeX{% em %}公式
-
+###其它
+显示相关文件的插件用[related_posts-jekyll_plugin](https://github.com/LawrenceWoodman/related_posts-jekyll_plugin)、[只显示第一段](https://github.com/sebcioz/jekyll-only_first_p)的插件，可解析类似wordpress的`<!--more-->`标记的[excerpt插件](https://gist.github.com/986665)，美化引用格式的[blockquote插件](http://octopress.org/docs/plugins/blockquote/)。[octopress的插件](http://octopress.org/docs/plugins/)可以直接用于jekyll中。
