@@ -14,9 +14,16 @@
     <!-- Le styles -->
     <link href="{{ ASSET_PATH }}/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="{{ ASSET_PATH }}/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
-    
+
+    <!-- MathJax for LaTeX -->
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+	<!-- pygments higlight code  CSS-->
+    <link href="{{ ASSET_PATH }}/pygments/emacs.css" type="text/css" rel="stylesheet" />
+	<!-- google code prettify for hightlight code CSS & JS-->
+    <!--
     <link href="{{ ASSET_PATH }}/google-code-prettify/prettify.css" type="text/css" rel="stylesheet" />
-    <script type="text/javascript" src="{{ ASSET_PATH }}/google-code-prettify/prettify.js"></script>
+    <script type="text/javascript" src="{{ ASSET_PATH }}/google-code-prettify/prettify.js"></script>  
+    -->
 
     <!-- Le fav and touch icons -->
     <!-- Update these with your own images
@@ -27,7 +34,7 @@
   -->
   </head>
 
-  <body onload="prettyPrint()">
+  <body>
 
     <div class="navbar">
       <div class="navbar-inner">

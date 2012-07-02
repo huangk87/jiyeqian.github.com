@@ -4,7 +4,7 @@ title: "Git 速查手册"
 description: ""
 category: 振导社会
 date: 2011-09-27 13:37:00
-tags: [程序, Git, 速查, 简介]
+tags: [程序, git, 速查, 简介]
 ---
 {% include JB/setup %}
 

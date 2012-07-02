@@ -22,7 +22,7 @@ body {
 }
 .container > footer p {
 	font-size: 13px;
-	text-align: center; 
+	text-align: center;
 }
 .wrapper {
 	background-color: #fff;
@@ -35,7 +35,6 @@ body {
 	-moz-box-shadow: 0px 1px 3px #A8ABAB;
 	box-shadow: 0px 1px 3px #A8ABAB;
 }
-
 
 .fixed-wrapper {
 	height: 400px;
@@ -93,7 +92,7 @@ h6 {
 	color: #999;
 	text-transform: uppercase;
 }
-p { 
+p {
 	margin: 0 0 14px;
 	font-family: 'Hiragino Sans GB', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-size: 15px;
@@ -133,6 +132,11 @@ a:hover {
 p a {
 	border-bottom: 1px dashed #CED1D1;
 }
+
+article a {
+	color: black;
+}
+
 .nav > a {
 	margin: 0px 20px 0px 0px;
 }
@@ -178,13 +182,14 @@ hr {
 article hr {
 	margin: 10px 0;
 }
+
 address {
 	line-height: 30px;
 }
-pre { 
+pre {
 	line-height: 20px;
 }
-blockquote p { 
+blockquote p {
 	font-size: 14px;
 }
 
@@ -240,7 +245,7 @@ q:before, q:after, blockquote:before, blockquote:after {
 	line-height: normal;
 }
 .tag_box li span {
-	display: inline-block;	
+	display: inline-block;
 	font-weight: bold;
 	color: #005580;
 	background-color: #fff;
@@ -251,3 +256,43 @@ q:before, q:after, blockquote:before, blockquote:after {
 	vertical-align: 2px;
 	font-size: 10px;
 }
+
+/* code block for octopress "include code" plugin */
+figure{
+	background: none;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	display: block;
+	position: relative;
+	vertical-align: baseline;
+}
+
+figure.code .gutter {
+	display: none;
+}
+
+figure.code figcaption {
+	text-align: center;
+	padding: 0;
+	font-weight: normal;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border: 1px solid #565656;
+	border-top-color: #cbcbcb;
+	border-left-color: #a5a5a5;
+	border-right-color: #a5a5a5;
+	border-bottom-color: #cbcbcb;
+	margin-bottom: 5px;
+}
+
+figure.code figcaption a {
+	position: absolute;
+	right: .8em;
+	text-decoration: none;
+	z-index: 1;
+}
+
+
+

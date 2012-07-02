@@ -2,6 +2,7 @@
 # For more see: https://github.com/mojombo/jekyll/wiki/Permalinks
 markdown: rdiscount 
 paginate: 4
+code_dir: /assets/code
 
 permalink: /:year/:month/:title 
 
