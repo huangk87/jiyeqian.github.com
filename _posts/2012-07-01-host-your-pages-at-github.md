@@ -57,18 +57,3 @@ jekyll-bootstrap的\_includes/JB中有一些常用的工具，用于列表显示
 
 
 
-<span id="mathjax"></span>
-###{% m %}\LaTeX{% em %}公式
-页面`<head></head>`中加载[mathjax](http://www.mathjax.org/)高亮的javascript脚本后，利用[mathjax插件](https://gist.github.com/834610)，即可载入公式。下面是一个用mathjax，<code>&#123;% math %&#125; e&#94;x = \sum\_{n=0}&#94;\infty \frac{x&#94;n}{n!} = \lim\_{n\rightarrow\infty} (1+x/n)&#94;n &#123;% endmath %&#125;</code>显示的公式：
-{% math %} e^x = \sum_{n=0}^\infty \frac{x^n}{n!} = \lim_{n\rightarrow\infty} (1+x/n)^n {% endmath %}   
-mathjax利用标签<code>&#123;% m %&#125; \alpha + \beta &#123;% em %&#125;</code>也可显示行内公式{% m %} \alpha + \beta {% em %}。
-
-另外一些支持{% m %}\LaTeX{% em %}公式的方案可参考：Kramdown的[Math Blocks](http://kramdown.rubyforge.org/syntax.html#math-blocks)、[Maruku的公式支持](http://maruku.rubyforge.org/math.xhtml)。 其他和学术写作相关的插件有：[jekyll-scholar](https://github.com/inukshuk/jekyll-scholar)、[jekyll-citation](https://github.com/archome/jekyll-citation)、[bibjekyll](https://github.com/pablooliveira/bibjekyll)。
-
-###其它
-显示相关文件的插件用[related_posts-jekyll_plugin](https://github.com/LawrenceWoodman/related_posts-jekyll_plugin)、[只显示第一段](https://github.com/sebcioz/jekyll-only_first_p)的插件，可解析类似wordpress的`<!--more-->`标记的[excerpt插件](https://gist.github.com/986665)，美化引用格式的[blockquote插件](http://octopress.org/docs/plugins/blockquote/)。[octopress的插件](http://octopress.org/docs/plugins/)可以直接用于jekyll中。
-
-一个显示引用的示例：   
-{% blockquote Bobby Willis http://google.com/search?q=pants the search for bobby's pants %}
-  Wheeee!
-{% endblockquote %}
