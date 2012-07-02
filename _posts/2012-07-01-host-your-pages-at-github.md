@@ -25,7 +25,7 @@ jekyll模板就是带有变量的html格式文件。jekyll的模板用[Liquid](h
 [YFM]: https://github.com/mojombo/jekyll/wiki/YAML-Front-Matter
 
 ###jekyll的数据
-jekyll的数据是用[markdown](http://daringfireball.net/projects/markdown/)、[textile](http://textile.sitemonks.com/)等标记语言写的文档。这些格式的文档解析为html格式后，注入jekyll模板的<code>&#123;&#123; content &#125;&#125;</code>，就有了网站的页面。jekyll支持的markdown解析器（将markdown转换为html）有：<span id="markdown"></span>[rdiscount](https://github.com/rtomayko/rdiscount/)、[kramdown](http://kramdown.rubyforge.org/)、[redcarpet](https://github.com/tanoku/redcarpet/)、[maruku](http://maruku.rubyforge.org/)（jekyll默认）、[bluecloth](http://deveiate.org/projects/BlueCloth/)。为了方便处理{% m %}\LaTeX{% em %}公式，也有人hack了jekyll，[将pandoc作为markdown的解析器](http://yangzetian.github.com/2012/04/15/jekyll-pandoc/)。一个更方便的方法是通过[jekyll-pandoc-plugin](https://github.com/dsanson/jekyll-pandoc-plugin)插件，启用pandoc解析器。但是，这些hack后的jekyll启用pandoc不会在github上生效，只能用于本机。
+jekyll的数据是用[markdown](http://daringfireball.net/projects/markdown/)、[textile](http://textile.sitemonks.com/)等标记语言写的文档。这些格式的文档解析为html格式后，注入jekyll模板的，就有了网站的页面。jekyll支持的markdown解析器（将markdown转换为html）有：<span id="markdown"></span>[rdiscount](https://github.com/rtomayko/rdiscount/)、[kramdown](http://kramdown.rubyforge.org/)、[redcarpet](https://github.com/tanoku/redcarpet/)、[maruku](http://maruku.rubyforge.org/)（jekyll默认）、[bluecloth](http://deveiate.org/projects/BlueCloth/)。为了方便处理{% m %}\LaTeX{% em %}公式，也有人hack了jekyll，[将pandoc作为markdown的解析器](http://yangzetian.github.com/2012/04/15/jekyll-pandoc/)。一个更方便的方法是通过[jekyll-pandoc-plugin](https://github.com/dsanson/jekyll-pandoc-plugin)插件，启用pandoc解析器。但是，这些hack后的jekyll启用pandoc不会在github上生效，只能用于本机。
 
 
 
