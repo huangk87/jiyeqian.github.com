@@ -3,6 +3,7 @@
 markdown: rdiscount 
 paginate: 4
 code_dir: /assets/code
+safe: false
 
 permalink: /:year/:month/:title 
 
