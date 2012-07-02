@@ -49,3 +49,29 @@ jekyll-bootstrap的\_includes/JB中有一些常用的工具，用于列表显示
 
 ### 小结
 [jekyll生成静态页面的过程](http://jekyllbootstrap.com/lessons/jekyll-introduction.html#how_jekyll_generates_the_final_static_files)就是先搜集站点的原始数据，通过计算，生成用于页面显示的结构化数据（最终的html静态页面）。结构化数据来源有两方面：一方面是文件中的配置文件，如\_config.yml和markdown的[YAML Front Matter][YFM]；另一方面通过目录结构和jekyll定义的解析法则，产生数据。站点的全局数据用`site.`访问，页面数据用`page.`访问。有了这些结构化的数据后，jekyll再按照用户定义的模板，用相应的结构化数据替换模板中的变量。用户编写的插件是为了计算出满足用户特定需求的数据。
+
+##装饰部件
+
+###图片与文件
+
+
+###代码高亮
+网页代码高亮的一般原理是先用JS对代码的进行解析，并提根据不同程的序语言提取关键字、变量、常量、注释，然后将代码层次结构用html标签描述，最后用CSS着色。
+
+代码高亮的方案有很多，比如：[转帖gist代码的插件](https://gist.github.com/1027674)，[google-code-prettify](http://google-code-prettify.googlecode.com/svn/trunk/README.html)，[利用pygments高亮代码的插件](https://github.com/rsim/blog.rayapps.com/blob/master/_plugins/pygments_cache_patch.rb)，octopress的[backtick-codeblock](http://octopress.org/docs/plugins/backtick-codeblock/)，如果需要在线展示html、js、CSS及其效果，当然还是用[jsfiddle插件](http://octopress.org/docs/plugins/jsfiddle-tag/)。
+
+利用pygments，须先在\_config.yml中设置`pygments: true`，并嵌入生成的相应CSS。   
+{% highlight bash %}
+$ pygmentize -S default -f html | sed 's/^/.highlight code /g' > default.css
+{% endhighlight %}   
+在pygments的CSS选择器前都加上`.highlight code`，防止pygments的CSS影响[mathjax](#mathjax)公式的CSS。[pygments也可能会和bootstrap.min.css冲突](http://www.stehem.net/2012/02/14/how-to-get-pygments-to-work-with-jekyll.html)，需要修改css。上面的`pygmentize`命令就是pygments代码高亮的效果。
+
+转帖gist代码的效果是这样的：
+{% gist 834610 %}
+
+另一个比较特殊的代码高亮插件是[include-code](http://octopress.org/docs/plugins/include-code/)，可以直接显示目录中的代码文件，在\_config.yml中设置好`code_dir`参数后，直接用<code>&#123;% include_code excerpt.rb %&#125;</code>，即可显示高亮代码（布局是自己定义的，代码高亮的CSS和pygments一样）如下：  
+{% include_code excerpt.rb %}
+
+<span id="mathjax"></span>
+
+
