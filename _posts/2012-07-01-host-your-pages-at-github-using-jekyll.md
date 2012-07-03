@@ -61,7 +61,9 @@ jekyll-bootstrap的\_includes/JB中有一些常用的工具，用于列表显示
 这些装饰部件中，如果本地的jekyll使用了自定义的插件，github的jeklly解析器不会支持这些自定义插件。
 
 ###图片与文件
+站点需要的图片直接存放在`assets/images`文件夹中，可以在\_config.yml中定义一个形如`img_url: http://jiyeqian.github.com/assets/images`的变量，然后在markdown文件需要用到图片的地方插入类似<code>![git代码库结构](&#123;&#123; site.img_url &#125;&#125;/2012-06-27-git-transport.png)</code>的代码即可显示图像。
 
+如果图和文件较多，这里有一些[图片和文件托管的网络资源]({{ site.production_url }}/2011/09/web-cloud-life/)供参考。
 
 ###代码高亮
 网页代码高亮的一般原理是先用JS或其它脚本语言对代码的进行解析，并提根据不同程的序语言提取关键字、变量、常量、注释，然后将代码层次结构用html标签描述，最后用CSS着色。
@@ -110,7 +112,7 @@ $$\alpha + \beta$$
 显示相关文件的插件用[related_posts-jekyll_plugin](https://github.com/LawrenceWoodman/related_posts-jekyll_plugin)、[只显示第一段](https://github.com/sebcioz/jekyll-only_first_p)的插件，可解析类似wordpress的`<!--more-->`标记的[excerpt插件](https://gist.github.com/986665)，美化引用格式的[blockquote插件](http://octopress.org/docs/plugins/blockquote/)。[octopress的插件](http://octopress.org/docs/plugins/)可以直接用于jekyll中。
 
 ###小结
-要将jekyll的页面托管在github时，推荐尽量不用github之外的插件。代码高亮用pygments，markdown的解析器用kramdown更利于对公式的解析，如果还要其它一些美化，就直接查html代码吧！
+要将jekyll的页面托管在github时，推荐尽量不用github之外的插件。代码高亮用pygments，markdown的解析器用kramdown更利于对公式的解析，如果还要其它一些美化，就直接插html代码吧！
 
 ##一些技巧
 

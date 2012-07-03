@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Git 速查手册"
+title: "git速查手册"
 description: ""
 category: 振导社会
 date: 2011-09-27 13:37:00
@@ -10,7 +10,9 @@ tags: [程序, git, 速查, 简介]
 
 
 ##git 代码库的结构
-git 维护的代码分成三部分：current working directory（当前工作目录）、index file、git repository（git仓库）。
+![git代码库结构]({{ site.img_url }}/2012-06-27-git-transport.png)
+
+上图展示了git代码仓库的结构以及执行相关命令后数据的变迁流程。git 维护的代码分成三部分：current working directory（当前工作目录）、index file、git repository（git仓库）。
 
 - git add 会将“当前工作目录”的改变写到“index file”；
 - git commit 会将“index file”中的改变写到git仓库；

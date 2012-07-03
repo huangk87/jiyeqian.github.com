@@ -103,17 +103,14 @@ p small {
 }
 
 /* 设置图片 */
-img {
-	max-width: 640px;
+.wrapper p img {
+	max-width: 600px;
 	height: auto;
 	border: 0;
 	-ms-interpolation-mode: bicubic;
-}
-.wrapper p img {
 	clear: both;
 	display: block;
-	margin-left: -20px;
-	margin-right: -20px;
+	margin: 10px auto; /*-20px*/
 }
 
 /* 设置超链接 */

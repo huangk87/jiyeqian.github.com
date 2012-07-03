@@ -2,7 +2,7 @@
 layout: post
 title: 李纯明博士报告安排
 description: ""
-category: 造就人才
+category: 研究学术
 tags: [实验室, 通知]
 ---
 {% include JB/setup %}
