@@ -25,7 +25,7 @@ Droplr [http://droplr.com/](http://droplr.com/)：貌似只能在Apple上用
 SugarSync [https://www.sugarsync.com/](https://www.sugarsync.com/)  
 Q盘 [http://guanjia.qq.com/act/qpan/](http://guanjia.qq.com/act/qpan/)：腾讯出品，还未上线  
 Cloud Drive [https://www.amazon.com/clouddrive/](https://www.amazon.com/clouddrive/)：亚马逊出品  
-
+<!--more-->
 ##Blog
 is-programmer [http://www.is-programmer.com/](http://www.is-programmer.com/)：代码高亮、LaTeX公式  
 cnblog [http://www.cnblogs.com/](http://www.cnblogs.com/)：代码高亮、LaTeX公式  

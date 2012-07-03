@@ -1,6 +1,6 @@
 # This is the default format. 
 # For more see: https://github.com/mojombo/jekyll/wiki/Permalinks
-markdown: rdiscount 
+markdown: kramdown
 paginate: 4
 code_dir: /assets/code
 safe: false

@@ -17,7 +17,7 @@ git 维护的代码分成三部分：current working directory（当前工作目
 - git commit -a 则会直接将“当前工作目录”的改动同时写到“index file”和“git仓库”。
 
 将“当前工作目录”记为 (1)，将 index file 记为 (2)，将“git仓库”记为 (3)。他们之间的提交层次关系是 (1) -> (2) -> (3)，从时间上看，可以认为(1)是最新的代码，(2)比较旧，(3)更旧。三者之间的数据变化：
-
+<!--more-->
 - git add 完成的是(1) -> (2)；
 - git commit 完成的是(2) -> (3)；
 - git commit -a 两者的直接结合。  
@@ -67,7 +67,8 @@ git merge \<branch\> | 合并其他分支到当前分支
 git diff \<source_branch\> \<target_branch\> | 查看分支间差异
 git log | 获取提交 ID
 git tag 1.0.0 \<ID\> | 创建一个叫做 1.0.0 的标签
-git checkout -- \<filename\> | 用git仓库的HEAD替换当前工作目录的改动
+git checkout -- \<filename\> | 用git仓库的HEAD替换当前工作目录的改动   
+
 ___
 
 git add 命令 | 含义
