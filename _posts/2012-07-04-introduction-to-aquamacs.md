@@ -416,39 +416,7 @@ Aquamacs已经完成了很多Emacs的基本配置，配置中需要的相关elis
 {% endhighlight %}
 
 
-###代码补齐
 
-代码补齐就是根据当前的输入字符，补全或提示即将要输入的字符。补齐的原理就是根据当前已输入的字符，在特定的字典里匹配出即将要输入的字符，因此，生成用于补齐的字典是关键。这个字典来源有两方面：一是，用户提前提前定义，[auto-complete][]的用户定义字典在dict目录，[yasnippet][]的代码片断预先定已在snippets目录，[emacs-template][]也有用于存放用户定义模板的templates目录；二是，程序自动分析生成，程序自动分析C/C++代码生成字典的有[cedet]和[gccsense][]，[rope][]可分析python代码生成补齐字典，还有一些自动生成补齐字典的方案与程序语言无关，通过当前缓冲区、文件等信息，自动生成补齐字典，比如[auto-complete][]和[company][]。
-
-[auto-complete][]和[company][]主要功能是作为一个补齐前端，用户可以根据需要自定义用于补齐的后端驱动引擎，比如把[yasnippet][]（[解决company与yasnippet整合冲突的方案](http://www.emacswiki.org/cgi-bin/emacs-en/CompanyMode#toc8)）、[ropemacs][]和[cedet][]整合到它们的补齐方案中。[cedet][]（Collection of Emacs Development Environment Tools）结合[ecb][]（Emacs Code Browser）就是是一个功能完善的IDE方案，[cedet][]既有不错的前端，后端有有强大的C/C++代码解析引擎，[ecb][]方便阅读代码。
-
-[yasnippet]:https://github.com/capitaomorte/yasnippet
-[emacs-template]:http://emacs-template.sourceforge.net
-[gccsense]:http://cx4a.org/software/gccsense/
-[ecb]:http://ecb.sourceforge.net/
-
-<!--
-my-cedet-complete和company可以共存   
-all-auto-complete-settings和company不可共存   
-all-auto-complete-settings和my-cedet-complete不可共存   
-
-Symbol's function definition is void: company-pysmell  
--->
-
-[auto-complete]:http://cx4a.org/software/auto-complete/   
-[company]: http://nschum.de/src/emacs/company-mode/   
-[cedet]:http://cedet.sourceforge.net/  
-
-###python的补齐方案
-python的补齐方案基于[rope][]，python补齐首先需要安装[rope][]、[ropemode][]和[pymacs][]（安装时需要手动将Pymacs.py拷贝到python的site-packages目录）。在此基础上，可以安装[pysmell][]、[ropemacs][]或[pycomplete][]三者之一实现补齐。[company][]和[auto-complete][]这些补齐前端也可用[pysmell][]、[ropemacs][]作为其补齐的引擎。
-
-
-[rope]:http://rope.sourceforge.net/   
-[pycomplete]:http://www.rwdev.eu/articles/emacspyeng   
-[pymacs]:https://github.com/pinard/Pymacs/   
-[ropemode]:http://pypi.python.org/pypi/ropemode
-[pysmell]:http://code.google.com/p/pysmell/
-[ropemacs]:http://rope.sourceforge.net/ropemacs.html
 
 
 ##参考资源
