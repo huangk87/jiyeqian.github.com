@@ -34,44 +34,9 @@ CTRL | command | Ctrl
 
 Emacs最常用功能可通过简明的[GNU Emacs Reference Card](http://www.damtp.cam.ac.uk/user/eglen/ess11/resources/emacs-refcard.pdf)学习。
 
-###info的快捷键
 
-功能 | 快捷键 | 快捷键 | 功能
-----: | ----: | :---- | :----
-上一节点 | `p` | `n` | 下一节点   
-上一菜单 | `[` | `]` | 下一菜单（菜单前标有*）
-交叉引用跳转 | `f` | `l` | 交叉引用返回
-向上翻页 | `DELETE` | `SPACE` | 向下翻页   
-||`C-l` | 当前节点循环翻页
-||`b` | 回到节首   
-||`u` | 上级菜单
-||`m` | 菜单 
-||`g` | 跳到指定节点
-||`t` | 回到顶层菜单
-||`d` | 回到info总目录
-||`h` | info tutorial 
 
-info兼容Emacs快捷键。
 
-<!--
-###Emacs戏法
-
- 快捷键 | 功能
----- | ----
-`C-u <数字> 快捷键`| 为快捷键传送参数
-`M-<数字> 快捷键`| 执行快捷键`<数字>`次
-
-如何输入`<数字>`个数字？
-
-拼写检查：   
-ispell、flyspell-mode
-
-Tabs and Windows：
-一个tab对应于一个buffer，OSX切换tab的快捷键是command+数字
-Aquamacs配置文件的位置
-
-可用C-h v load-path查看  
--->
 
 ###OSX系统和Emacs术语对应关系 
 
