@@ -53,25 +53,6 @@ Emacs最常用功能可通过简明的[GNU Emacs Reference Card](http://www.damt
 
 info兼容Emacs快捷键。
 
-<!--
-###Emacs戏法
-
- 快捷键 | 功能
----- | ----
-`C-u <数字> 快捷键`| 为快捷键传送参数
-`M-<数字> 快捷键`| 执行快捷键`<数字>`次
-
-如何输入`<数字>`个数字？
-
-拼写检查：   
-ispell、flyspell-mode
-
-Tabs and Windows：
-一个tab对应于一个buffer，OSX切换tab的快捷键是command+数字
-Aquamacs配置文件的位置
-
-可用C-h v load-path查看  
--->
 
 ###OSX系统和Emacs术语对应关系 
 
