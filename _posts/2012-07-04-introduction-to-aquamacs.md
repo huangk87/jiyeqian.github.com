@@ -365,58 +365,6 @@ emacs运行时处于一个命令循环之中，不断从用户得到按键，然
 {% endhighlight %}
 
 
-##Aquamacs常用配置
-
-Aquamacs已经完成了很多Emacs的基本配置，配置中需要的相关elisp函数，[可查索引](http://www.gnu.org/software/emacs/manual/html_node/elisp/Index.html)。[ahei][]和[alexott][]的配置是不错的参考，[emacswiki][]和[emacser][]可以找到很多相关资料。
-
-[el-get][]是一个与debian的`apt-get`类似的emacs配置包管理器。
-
-[ahei]:http://code.google.com/p/dea/
-[alexott]:https://github.com/alexott/emacs-configs
-[emacser]:http://emacser.com/
-[emacswiki]:http://www.emacswiki.org/   
-[el-get]:https://github.com/dimitri/el-get
-
-
-<!--
-{% highlight cl %}
-(set-default-font "Menlo Plus")
-(set-fontset-font
- (frame-parameter nil 'font)
- 'han
- (font-spec :family "Hiragino Sans GB"))
-{% endhighlight %}
-
-{% highlight cl %}
-(set-fontset-font NAME TARGET FONT-SPEC &optional FRAME ADD)
-{% endhighlight %}
-
-
-- `NAME`
-- `TARGET`
-- `FONT-SPEC`可以通过函数`font-spec`设置，参数和`set-face-attribute`的一致
-- `FRME ADD`
-
-查看当前用的字体可以用`describe-font`
--->
-
-
-###基本配置
-
-加载配置文件的路径：
-
-{% highlight cl %}
-(add-to-list 'load-path "~/.emacs.d/site-lisp")
-{% endhighlight %}
-
-绑定快捷键到函数/命令：
-
-{% highlight cl %}
-(global-set-key (kbd "C-c c") 'comment-region-or-line) 
-{% endhighlight %}
-
-
-
 
 
 ##参考资源
