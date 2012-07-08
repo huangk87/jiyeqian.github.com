@@ -42,14 +42,10 @@ Emacs最常用功能可通过简明的[GNU Emacs Reference Card](http://www.damt
 上一菜单 | `[` | `]` | 下一菜单（菜单前标有*）
 交叉引用跳转 | `f` | `l` | 交叉引用返回
 向上翻页 | `DELETE` | `SPACE` | 向下翻页    
- &nbsp;| &nbsp;|`C-l` | 当前节点循环翻页   
- &nbsp;| &nbsp;|`b` | 回到节首   
- &nbsp;| &nbsp;|`u` | 上级菜单  
- &nbsp;| &nbsp;|`m` | 菜单   
- &nbsp;| &nbsp;|`g` | 跳到指定节点   
- &nbsp;| &nbsp;|`t` | 回到顶层菜单   
- &nbsp;| &nbsp;|`d` | 回到info总目录    
- &nbsp;| &nbsp;|`h` | info tutorial    
+info tutorial|`h`|`C-l` | 当前节点循环翻页   
+ 上级菜单| `u` |`b` | 回到节首   
+跳到指定节点 | `g` |`m` | 菜单   
+回到info总目录  | `d` |`t` | 回到顶层菜单   
 
 info兼容Emacs快捷键。
 
