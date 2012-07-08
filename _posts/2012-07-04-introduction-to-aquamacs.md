@@ -34,7 +34,17 @@ CTRL | command | Ctrl
 
 Emacs最常用功能可通过简明的[GNU Emacs Reference Card](http://www.damtp.cam.ac.uk/user/eglen/ess11/resources/emacs-refcard.pdf)学习。
 
+###info的快捷键
 
+功能 | 快捷键 | 快捷键 | 功能
+----: | ----: | :---- | :----
+上一节点 | `p` | `n` | 下一节点   
+上一菜单 | `[` | `]` | 下一菜单（菜单前标有*）
+交叉引用跳转 | `f` | `l` | 交叉引用返回
+向上翻页 | `DELETE` | `SPACE` | 向下翻页   
+
+
+info兼容Emacs快捷键。
 
 <!--
 ###Emacs戏法
