@@ -107,22 +107,6 @@ Keyboard shortcut | Key (binding)
 
 
 
-##参考资源
 
-[Aquamacs Emacs Manual](http://aquamacs.org/features.shtml)     
-[emacswiki](http://www.emacswiki.org/)       
-[GNU Emacs manual](http://www.gnu.org/software/emacs/manual/emacs.html)   
-[叶文彬：Elisp入门](http://www.newsmth.net/bbsanc.php?path=%2Fgroups%2Fcomp.faq%2FEmacs%2Felisp%2Fhappierbee%2FM.1184679743.j0&ap=64311)   
-[About Cons Cells](http://cs.gmu.edu/~sean/lisp/cons/)    
-[wikipedia: S-expression](http://en.wikipedia.org/wiki/S-expression)      
-[wikipedia: LISP](http://zh.wikipedia.org/wiki/LISP)  
-[wikipedia: Lisp (programming language)](http://en.wikipedia.org/wiki/Lisp_(programming_language))   
-[An Introduction to Emacs Lisp Programming](http://www.gnu.org/software/emacs/emacs-lisp-intro/)   
-[GNU Emacs Lisp Reference Manual](http://www.gnu.org/software/emacs/manual/elisp.html)                
-[Emacs补全利器：auto-complete+gccsense](http://emacser.com/emacs-gccsense.htm)   
-[用CEDET浏览和编辑C++代码](http://emacser.com/cedet.htm)    
-[手把手教你emacs cedet C/C++自动补全](http://www.cnblogs.com/logicbaby/archive/2011/10/19/2217253.html)   
-[A Gentle introduction to CEDET](http://alexott.net/en/writings/emacs-devenv/EmacsCedet.html)   
-[Emacs补全利器：auto-complete+gccsense](http://emacser.com/emacs-gccsense.htm)  
 
  
