@@ -2,7 +2,7 @@
 # For more see: https://github.com/mojombo/jekyll/wiki/Permalinks
 markdown: kramdown
 paginate: 4
-safe: true
+safe: false 
 
 img_url: http://jiyeqian.github.com/assets/images
 code_dir: /assets/code

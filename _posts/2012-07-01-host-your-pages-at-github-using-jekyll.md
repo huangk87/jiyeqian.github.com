@@ -15,9 +15,19 @@ tags: [github, git, jekyll, 速查, 简介, 程序]
 ##jekyll与github的关系
 github站点是位于username.github.com仓库中的静态页面。利用高效的工具生成高质量的静态页面是github建站的王道。[jekyll](http://jekyllrb.com/)就是用[ruby](http://www.ruby-lang.org/)[制造静态站点的的ruby解析引擎](http://jekyllbootstrap.com/lessons/jekyll-introduction.html)（构建网站时ruby不是必会的）。github除了能构建独立的站点外，还可以为每个项目建立站点。github提供了[自动](https://help.github.com/articles/creating-pages-with-the-automatic-generator)和[手动](https://help.github.com/articles/creating-project-pages-manually)建立项目站点的方法。
 
-github标配有jekyll解析引擎，上传的站点可以代由github的jekyll解析为静态页面。[github使用jekyll的\_config.yml](https://help.github.com/articles/using-jekyll-with-pages)和用户本地jekyll的不同，它的功能有限。如果用户本地的jekyll使用了自定义插件，github的解析会出错，启用了本地自定义插件的用户可以上传本地解析好的静态页面到github。如果[不需要github用jekyll处理上传的站点文件](https://help.github.com/articles/files-that-start-with-an-underscore-are-missing)，可以在根目录下添加一个.nojekyll文件。
+github标配有jekyll解析引擎，上传的站点可以代由github的jekyll解析为静态页面。如果[不需要github用jekyll处理上传的站点文件](https://help.github.com/articles/files-that-start-with-an-underscore-are-missing)，可以在根目录下添加一个.nojekyll文件。
 
+[github使用jekyll的\_config.yml](https://help.github.com/articles/using-jekyll-with-pages)和用户本地jekyll的不同，它的功能有限，github运行jekyll带有`--safe`参数。如果用户本地的jekyll使用了自定义插件，github的解析会出错，启用了本地自定义插件的用户可以上传本地解析好的静态页面到github。
 
+由于本地和gihub的[jekyll版本](https://help.github.com/articles/using-jekyll-with-pages)不同，即使本地正常解析的页面也可能会在github上解析出错。下面的表格在github上`Jekyll 0.11.0 with Liquid 2.2.2`会出错：
+
+{% highlight bash %}
+   功能  |   快捷键  |   快捷键  |  功能
+-------: | -------: | :------- | :-------
+上一节点  |   `p`    |    `n`   | 下一节点  
+||    `m`   | 菜单 
+{% endhighlight %} 
+  
 ##jekyll驱动网站原理
 
 [用jekyll构建静态网站](http://chen.yanping.me/cn/blog/2011/12/15/building-static-sites-with-jekyll/)很容易。模板、数据和美化是jekyll建站的三要素。jekyll自动将数据注入模板，通过美化，得到站点。这里可以看到[一堆用jekyll打造的站点](https://github.com/mojombo/jekyll/wiki/Sites)，大部分都可以`git clone`回来学习参考。  
