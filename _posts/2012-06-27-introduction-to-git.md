@@ -4,7 +4,7 @@ title: "git速查手册"
 description: ""
 category: 振导社会
 date: 2011-09-27 13:37:00
-tags: [程序, git, 速查, 简介]
+tags: [程序, git, 速查, 简介, 工具]
 ---
 {% include JB/setup %}
 
@@ -29,6 +29,9 @@ tags: [程序, git, 速查, 简介]
 - git diff 得到的是从(2)到(1)的变化
 - git diff --cached 得到的是从(3)到(2)的变化
 - git diff HEAD 得到的是从(3)到(1)的变化
+
+github给出了如下图所示的[简明git可视化教程](http://marklodato.github.com/visual-git-guide/index-en.html)。
+![git basic usage](http://marklodato.github.com/visual-git-guide/basic-usage.svg)
 
 ##git 中的常量
 
