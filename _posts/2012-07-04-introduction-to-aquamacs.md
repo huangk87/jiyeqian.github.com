@@ -415,6 +415,7 @@ Aquamacs已经完成了很多Emacs的基本配置，配置中需要的相关elis
 (global-set-key (kbd "C-c c") 'comment-region-or-line) 
 {% endhighlight %}
 
+
 ###代码补齐
 
 代码补齐就是根据当前的输入字符，补全或提示即将要输入的字符。补齐的原理就是根据当前已输入的字符，在特定的字典里匹配出即将要输入的字符，因此，生成用于补齐的字典是关键。这个字典来源有两方面：一是，用户提前提前定义，[auto-complete][]的用户定义字典在dict目录，[yasnippet][]的代码片断预先定已在snippets目录，[emacs-template][]也有用于存放用户定义模板的templates目录；二是，程序自动分析生成，程序自动分析C/C++代码生成字典的有[cedet]和[gccsense][]，[rope][]可分析python代码生成补齐字典，还有一些自动生成补齐字典的方案与程序语言无关，通过当前缓冲区、文件等信息，自动生成补齐字典，比如[auto-complete][]和[company][]。
