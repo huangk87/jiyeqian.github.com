@@ -297,7 +297,19 @@ emacs有如此丰富的模式，各缓冲区之间相互不冲突，很大程度
   body)
 {% endhighlight %}
 
-每个函数都有一个返回值，这个返回值一般是函数定义里最后一个表达式的值。
+每个函数都有一个返回值，这个返回值一般是函数定义里最后一个表达式的值。函数使用范例：
+
+{% highlight cl %}
+(defun 高斯 (玄)
+  "计算从 1 到 '玄' 之间所有整数之和，包括这两个数。"
+  (let ((总和 1)
+	(保存玄 玄))
+    (while (> 玄 1)
+      (setq 总和 (+ 总和 玄)
+	    玄 (- 玄 1)))
+    (message "从 1 加到 %d 值为： %d" 保存玄 总和)))
+(高斯 100)
+{% endhighlight %}
 
 函数参数列表的形式：
 
@@ -452,7 +464,8 @@ python的补齐方案基于[rope][]，python补齐首先需要安装[rope][]、[
 [Aquamacs Emacs Manual](http://aquamacs.org/features.shtml)     
 [emacswiki](http://www.emacswiki.org/)       
 [GNU Emacs manual](http://www.gnu.org/software/emacs/manual/emacs.html)   
-[叶文彬：Elisp入门](http://www.newsmth.net/bbsanc.php?path=%2Fgroups%2Fcomp.faq%2FEmacs%2Felisp%2Fhappierbee%2FM.1184679743.j0&ap=64311)   
+[叶文彬：Elisp入门](http://www.newsmth.net/bbsanc.php?path=%2Fgroups%2Fcomp.faq%2FEmacs%2Felisp%2Fhappierbee%2FM.1184679743.j0&ap=64311)  
+[Elisp 编程](http://jianlee.ylinux.org/Computer/Emacs/elisp.html)     
 [About Cons Cells](http://cs.gmu.edu/~sean/lisp/cons/)    
 [wikipedia: S-expression](http://en.wikipedia.org/wiki/S-expression)      
 [wikipedia: LISP](http://zh.wikipedia.org/wiki/LISP)  
