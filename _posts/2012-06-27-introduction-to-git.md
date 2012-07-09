@@ -147,10 +147,12 @@ git submodule | （1、2）
   2. git reset --hard origin/master
  
 ##参考文献
+[A Visual Git Reference](http://marklodato.github.com/visual-git-guide/index-en.html)   
 [git - 简易指南](http://rogerdudler.GitHub.com/git-guide/index.zh.html)  
 [Linux大棚的Git教程](http://roclinux.cn/?tag=git) ［链接目前不可用，2012/06/28］  
 [GIT基本概念和用法总结](http://guibin.iteye.com/blog/1014369)  
-[超级有用的git reset --hard和git revert命令](http://blog.sina.com.cn/s/blog_68af3f090100rp5r.html)
+[Git分支管理策略](http://www.ruanyifeng.com/blog/2012/07/git.html)   
+[超级有用的git reset --hard和git revert命令](http://blog.sina.com.cn/s/blog_68af3f090100rp5r.html)   
 
 [id]: http://example.com/  "Title"
 [id2]: http://i3.sinaimg.cn/IT/2012/0627/U7989P2DT20120627145618.jpg "picture"
