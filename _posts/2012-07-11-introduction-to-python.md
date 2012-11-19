@@ -7,7 +7,7 @@ tags: [python, 程序, 速查, 工具, 简介]
 ---
 {% include JB/setup %}
 
-python，一切皆对象！
+python，一切皆对象！ 
 
 python主要特色：解释型、面向对象、可扩展、可嵌入、小内核、动态类型、强类型。
 
