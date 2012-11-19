@@ -62,6 +62,7 @@ git clone /path/to/repository | 创建一个本地仓库的克隆
 git add \<filename\> | 将改动添加到缓存区
 git add * | 将改动添加到缓存区
 git commit -m "代码提交信息" | 提交改动
+git commit --amend -m "新的提交信息" | 提交改动（若有改动） + 修补最近一次提交
 git push origin master | 这些改动提交到远端仓库master分支
 git remote add origin \<server\> | 修改推送到远程的服务器
 git checkout -b feature_x | 创建一个叫做“feature_x”的分支，并切换过去
@@ -149,7 +150,7 @@ git submodule | （1、2）
 ##参考文献
 [A Visual Git Reference](http://marklodato.github.com/visual-git-guide/index-en.html)   
 [git - 简易指南](http://rogerdudler.GitHub.com/git-guide/index.zh.html)  
-[Linux大棚的Git教程](http://roclinux.cn/?tag=git) ［链接目前不可用，2012/06/28］  
+[Linux大棚的Git教程](http://roclinux.cn/?tag=git)       
 [GIT基本概念和用法总结](http://guibin.iteye.com/blog/1014369)  
 [Git分支管理策略](http://www.ruanyifeng.com/blog/2012/07/git.html)   
 [超级有用的git reset --hard和git revert命令](http://blog.sina.com.cn/s/blog_68af3f090100rp5r.html)   

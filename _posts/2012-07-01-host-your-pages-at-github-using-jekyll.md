@@ -85,7 +85,7 @@ pygments是github可支持的代码高亮方案。利用pygments，须先在\_co
 $ pygmentize -S default -f html | sed 's/^/.highlight code /g' > default.css
 {% endhighlight %}   
 
-在pygments的CSS选择器前都加上`.highlight code`，防止pygments的CSS影响[mathjax](#mathjax)公式的CSS。[pygments也可能会和bootstrap.min.css冲突](http://www.stehem.net/2012/02/14/how-to-get-pygments-to-work-with-jekyll.html)，需要修改css。上面的`pygmentize`命令就是pygments代码高亮的效果。
+在pygments的CSS选择器前都加上`.highlight code`，防止pygments的CSS影响[mathjax](#mathjax)公式的CSS。[pygments也可能会和bootstrap.min.css冲突](http://www.stehem.net/2012/02/14/how-to-get-pygments-to-work-with-jekyll.html)，需要修改css。上面的`pygmentize`命令就是pygments代码高亮的效果。代码高亮的highlight标签使用方法[可以参考这里](https://github.com/mojombo/jekyll/wiki/Liquid-Extensions)。
 
 另一个比较特殊的代码高亮插件是[include-code](http://octopress.org/docs/plugins/include-code/)，可以直接显示目录中的代码文件，在\_config.yml中设置好`code_dir`参数后，直接用<code>&#123;% include_code excerpt.rb %&#125;</code>，即可显示高亮代码（布局可自己定义，代码高亮的CSS可以用pygments的）。[pygments也支持类似的方法](https://gist.github.com/2890453#working-with-code-partials)，但效果不太好。
 
